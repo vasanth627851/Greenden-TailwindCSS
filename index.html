@@ -16,7 +16,7 @@
 
         <h1 class="text-2xl ">Greenden </h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -33,6 +33,24 @@
             </li>
         </ul>
     </nav>
+    <!--Side NavBar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000"  style="width: 50%;height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+
+        <ul class="flex flex-col gap-10 text-gray-600  items-center">
+            <li>
+                <a href="#" class="hover:underline hover:text-black">Home</a>
+            </li>
+            <li>
+                <a href="products.html" class="hover:underline hover:text-black">Products</a>
+            </li>
+            <li>
+                <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
+            </li>
+        </ul>
+    </section>
     <!--Header Section-->
     <section class="bg-green-100 px-4 py-4 flex justify-center">
         <div>
@@ -103,22 +121,26 @@
         <h1 class="font-bold mt-5 text-3xl mb-4">Best Seller</h1>
         <div class="grid grid-cols-2 md:grid-cols-4">
             <div>
-                <img src="./images/Bestseller_1.jpg" alt="" class="inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/Bestseller_1.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:translate-y-2">
                 <p>Rose plant</p>
                 <p>$20</p>
             </div>
             <div>
-                <img src="./images/Bestseller_2.png" alt="" class="inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/Bestseller_2.png" alt=""
+                    class="inline hover:shadow-xl transform hover:translate-y-2">
                 <p>Red Leaves Plant</p>
                 <p>$20</p>
             </div>
             <div>
-                <img src="./images/Bestseller_3.png" alt="" class="inline hover:shadow-xl transform hover:translate-y-2">
+                <img src="./images/Bestseller_3.png" alt=""
+                    class="inline hover:shadow-xl transform hover:translate-y-2">
                 <p>Maroon plant</p>
                 <p>$20</p>
             </div>
             <div>
-                <img src=" ./images/Bestseller_4.png" alt="" class="inline hover:shadow-xl transform hover:translate-y-2">
+                <img src=" ./images/Bestseller_4.png" alt=""
+                    class="inline hover:shadow-xl transform hover:translate-y-2">
                 <p>White Snake Head Flower plant</p>
                 <p>$20</p>
             </div>
@@ -128,19 +150,25 @@
     <section>
         <h1 class="text-3xl font-bold text-center">Customer Reviews</h1>
         <div class="flex flex-col gap-5 justify-center text-white m-5">
-        <div class="bg-green-700 p-5 mt-2 container">
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae placeat consequatur aperiam nesciunt accusantium ex labore tempore cupiditate, soluta harum, minus quibusdam repellendus suscipit explicabo beatae. Ipsa porro amet ducimus.</p>
-            <p class="font-bold text-yellow-300">Antony</p> 
+            <div class="bg-green-700 p-5 mt-2 container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae placeat consequatur aperiam nesciunt
+                    accusantium ex labore tempore cupiditate, soluta harum, minus quibusdam repellendus suscipit
+                    explicabo beatae. Ipsa porro amet ducimus.</p>
+                <p class="font-bold text-yellow-300">Antony</p>
+            </div>
+            <div class="bg-green-700 p-5 container">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quasi necessitatibus dolore sint
+                    itaque sapiente voluptas magni cum deserunt cupiditate nisi perspiciatis nesciunt qui praesentium
+                    numquam maiores et, temporibus est!</p>
+                <p class="font-bold text-yellow-300">Joshua</p>
+            </div>
+            <div class="bg-green-700 p-5 container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae earum nostrum nemo enim ex perferendis
+                    error consectetur, minima magnam veritatis, accusamus nihil amet velit? Exercitationem architecto
+                    illum iure! Corrupti, eius.</p>
+                <p class="font-bold text-yellow-300">Mathew</p>
+            </div>
         </div>
-        <div class="bg-green-700 p-5 container">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quasi necessitatibus dolore sint itaque sapiente voluptas magni cum deserunt cupiditate nisi perspiciatis nesciunt qui praesentium numquam maiores et, temporibus est!</p>
-            <p class="font-bold text-yellow-300">Joshua</p>
-        </div>
-        <div  class="bg-green-700 p-5 container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae earum nostrum nemo enim ex perferendis error consectetur, minima magnam veritatis, accusamus nihil amet velit? Exercitationem architecto illum iure! Corrupti, eius.</p>
-            <p class="font-bold text-yellow-300">Mathew</p>
-        </div>
-    </div>
     </section>
     <!--News Letter-->
     <section class="text-center">
@@ -152,10 +180,14 @@
     <!--Footer-->
     <section class="bg-green-100 p-10">
         <h1 class="text-4xl font-bold">Greenden</h1>
-        <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quam et excepturi sunt maxime accusantium incidunt.</p>
-        <p class="mt-5">@2024 Greenden.com</p> 
+        <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quam et excepturi sunt maxime
+            accusantium incidunt.</p>
+        <p class="mt-5">@2024 Greenden.com</p>
 
     </section>
+    
+
+    <script src="index.js"></script>
 </body>
 
 </html>
